@@ -1,15 +1,15 @@
-package com.badoo.mvicoredemo.ui.main.viewmodel
+package com.badoo.mvicoredemo.ui.main.datamodel
 
 import com.badoo.feature1.Feature1
 import com.badoo.feature2.Feature2
 import com.badoo.mvicoredemo.R
 
-class ViewModelTransformer : (Pair<Feature1.State, Feature2.State>) -> ViewModel {
+class DataModelTransformer : (Pair<Feature1.State, Feature2.State>) -> DataModel {
 
-    override fun invoke(pair: Pair<Feature1.State, Feature2.State>): ViewModel {
+    override fun invoke(pair: Pair<Feature1.State, Feature2.State>): DataModel {
         val (state1, state2) = pair
 
-        return ViewModel(
+        return DataModel(
             buttonColors = colors(state1.activeButtonIdx),
             counter = state1.counter,
             imageIsLoading = state2.isLoading,

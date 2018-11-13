@@ -66,6 +66,8 @@ dependencies {
     implementation deps('io.palaima.debugdrawer:debugdrawer-timber')
     implementation deps('io.palaima.debugdrawer:debugdrawer-network-quality')
 
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+
     // Utils
     implementation deps('com.jakewharton.timber:timber')
     implementation deps('com.jakewharton.scalpel:scalpel')

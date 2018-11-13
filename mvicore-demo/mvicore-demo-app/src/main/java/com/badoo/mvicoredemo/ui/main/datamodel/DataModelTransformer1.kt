@@ -1,13 +1,12 @@
-package com.badoo.mvicoredemo.ui.main.viewmodel
+package com.badoo.mvicoredemo.ui.main.datamodel
 
 import com.badoo.feature1.Feature1
-import com.badoo.feature2.Feature2
 import com.badoo.mvicoredemo.R
 
-class ViewModelTransformer1 : (Feature1.State) -> ViewModel {
+class DataModelTransformer1 : (Feature1.State) -> DataModel {
 
-    override fun invoke(state1: Feature1.State): ViewModel {
-        return ViewModel(
+    override fun invoke(state1: Feature1.State): DataModel {
+        return DataModel(
             buttonColors = colors(state1.activeButtonIdx),
             counter = state1.counter,
             imageIsLoading = false,

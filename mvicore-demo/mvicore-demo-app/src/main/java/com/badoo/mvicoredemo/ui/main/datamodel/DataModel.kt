@@ -1,6 +1,6 @@
-package com.badoo.mvicoredemo.ui.main.viewmodel
+package com.badoo.mvicoredemo.ui.main.datamodel
 
-data class ViewModel(
+data class DataModel(
     val buttonColors: List<Int>,
     val counter: Int,
     val imageUrl: String?,
